@@ -11,6 +11,8 @@ public class MingleDBContext : IdentityDbContext<AppUser, AppRole, int, Identity
   {
   }
 
+  public DbSet<Photo>? Photos { get; set; }
+
   protected override void OnModelCreating(ModelBuilder builder)
   {
     base.OnModelCreating(builder);

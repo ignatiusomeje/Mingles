@@ -18,4 +18,5 @@ public class AppUser : IdentityUser<int>
   public string?  Religion { get; set; }
 
   public ICollection<AppUserRole>? UserRoles {get; set;}
+  public ICollection<Photo>? Photos {get; set;}
 }
