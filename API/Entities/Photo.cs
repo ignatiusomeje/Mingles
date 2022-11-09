@@ -8,5 +8,4 @@ public class Photo
       public string? PublicId { get; set; }
       public AppUser? AppUser { get; set; }
       public int AppuserId { get; set; }
-
   }
