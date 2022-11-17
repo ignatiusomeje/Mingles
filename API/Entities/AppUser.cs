@@ -19,4 +19,8 @@ public class AppUser : IdentityUser<int>
 
   public ICollection<AppUserRole>? UserRoles {get; set;}
   public ICollection<Photo>? Photos {get; set;}
+  public string GetFullName(){
+    return $"{Firstname} {Lastname}";
+  } // this and Fullname does the same thing
+  public string FullName => $"{Firstname} {Lastname}";
 }

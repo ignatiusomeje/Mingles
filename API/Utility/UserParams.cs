@@ -6,6 +6,5 @@ public class UserParams
       public int MaxAge { get; set; }
       public string Gender { get; set; } = null!;
       public string? CurrentUsername { get; set; }
-      public string OrderBy { get; set; } = null!;
-
+      public string OrderBy { get; set; } = "created";
   }
